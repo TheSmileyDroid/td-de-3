@@ -2,6 +2,7 @@
 Desafio DE-3 de T&D
 """
 
+import sys
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from urllib.request import urlretrieve
@@ -48,44 +49,45 @@ def main():
 
     DataFrame = DataFrame.drop("completeData")
 
-    DataFrame.show()
-
-    DataFrame.printSchema()
     DataFrame.createOrReplaceTempView("health_data")
     DataFrame.createOrReplaceGlobalTempView("health_data")
 
-    # Exemplo de consulta SQL
-    sql_query = """
-    SELECT
-        MAX(year) AS max_year,
-        MIN(year) AS min_year,
-        COUNT(*) AS total_records,
-        COUNT(DISTINCT county) AS total_counties
-    FROM
-        health_data
-    """
+    with open("output.txt", "w") as sys.stdout:
+        DataFrame.show()
 
-    sqlDF = spark.sql(sql_query)
-    sqlDF.show(truncate=False)
+        DataFrame.printSchema()
+    
 
-    sql_query = """
-    SELECT
-        COUNT(*) AS total_per_year,
-        year
-    FROM
-        health_data
-    GROUP BY
-        year
-    ORDER BY
-        year
-        
-    """
+        # Exemplo de consulta SQL
+        sql_query = """
+        SELECT
+            MAX(year) AS max_year,
+            MIN(year) AS min_year,
+            COUNT(*) AS total_records,
+            COUNT(DISTINCT county) AS total_counties
+        FROM
+            health_data
+        """
 
-    sqlDF = spark.sql(sql_query)
-    sqlDF.show(truncate=False)
+        sqlDF = spark.sql(sql_query)
+        sqlDF.show(truncate=False)
 
+        sql_query = """
+        SELECT
+            COUNT(*) AS total_per_year,
+            year
+        FROM
+            health_data
+        GROUP BY
+            year
+        ORDER BY
+            year
+            
+        """
 
-    spark.stop()
+        sqlDF = spark.sql(sql_query)
+        sqlDF.show(truncate=False)
+
 
 
 if __name__ == "__main__":
