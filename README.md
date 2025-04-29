@@ -1,0 +1,68 @@
+## Data Preview
+| :sid | :id | :position | :created_at | :created_meta | :updated_at | :updated_meta | :meta | year | first_name | county | sex | name_count |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| row-v6cf~i865.pzhn | 00000000-0000-0000-A0DB-E84F4D18323D | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | OLIVIA | Albany | F | 16 |
+| row-i6yp_z5f6_3gyd | 00000000-0000-0000-1150-24582DCADD0A | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | AMELIA | Albany | F | 16 |
+| row-wfh4-5veb.96wi | 00000000-0000-0000-DB51-422E20326A7C | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | SOPHIA | Albany | F | 13 |
+| row-kh94.hvkq-ssiz | 00000000-0000-0000-73B7-70099BDE7DB0 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | AVA | Albany | F | 13 |
+| row-teme.x694~r6jk | 00000000-0000-0000-8D30-76A2E60F8943 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | EMMA | Albany | F | 12 |
+| row-bbsc.xej2_sgp9 | 00000000-0000-0000-BA42-6B7EA6BCE0F6 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | PENELOPE | Albany | F | 11 |
+| row-iekm-y8iv.uhy9 | 00000000-0000-0000-A6F0-521B7E01965B | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | MADISON | Albany | F | 10 |
+| row-bqth.4bfp_2xg4 | 00000000-0000-0000-FB59-F1D76944350E | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | ABIGAIL | Albany | F | 10 |
+| row-a2fc-g57s_wg4v | 00000000-0000-0000-E027-45EA5671EDC9 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | HARPER | Albany | F | 10 |
+| row-7mwd~364p.wfau | 00000000-0000-0000-A4E4-09DDAE8BB85D | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | ISLA | Albany | F | 9 |
+| row-9v4u.8d3g_zzy6 | 00000000-0000-0000-F13B-18B0F8F528AA | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | CHARLOTTE | Albany | F | 8 |
+| row-b55e.4y2v_va6a | 00000000-0000-0000-1B4F-8D79DC521F66 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | ISABELLA | Albany | F | 8 |
+| row-kvs3.95br~iamy | 00000000-0000-0000-C20E-056BB8880927 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | GIANNA | Albany | F | 8 |
+| row-26tw~74pd.td7m | 00000000-0000-0000-08EF-1427DD439645 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | ELEANOR | Albany | F | 8 |
+| row-pbba-tnat~8edn | 00000000-0000-0000-D5AC-5F7A3A698F36 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | LILLIAN | Albany | F | 8 |
+| row-jjsp~6wgf_saia | 00000000-0000-0000-8432-9E473BCF6A20 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | MADELINE | Albany | F | 8 |
+| row-e4b2.6mrm_3wdn | 00000000-0000-0000-4FAF-C205A395820D | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | EVELYN | Albany | F | 7 |
+| row-uac5.d4i4-rs4b | 00000000-0000-0000-F8DD-6A3CF3745C2B | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | RILEY | Albany | F | 7 |
+| row-b4rh~nw6u-w6dp | 00000000-0000-0000-A091-8FC3E0590921 | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | HAILEY | Albany | F | 7 |
+| row-t2t3-bshz~frfc | 00000000-0000-0000-DAE5-369D641CADFB | 0 | 1699650491 | None | 1699650491 | None | { } | 2021 | EVERLY | Albany | F | 7 |
+
+*Showing 20 of 93564 rows*
+
+## Schema
+```
+root
+ |-- :sid: string (nullable = true)
+ |-- :id: string (nullable = true)
+ |-- :position: string (nullable = true)
+ |-- :created_at: string (nullable = true)
+ |-- :created_meta: string (nullable = true)
+ |-- :updated_at: string (nullable = true)
+ |-- :updated_meta: string (nullable = true)
+ |-- :meta: string (nullable = true)
+ |-- year: string (nullable = true)
+ |-- first_name: string (nullable = true)
+ |-- county: string (nullable = true)
+ |-- sex: string (nullable = true)
+ |-- name_count: string (nullable = true)
+
+```
+
+## Summary Statistics
+| max_year | min_year | total_records | total_counties |
+| --- | --- | --- | --- |
+| 2021 | 2007 | 93564 | 123 |
+
+## Records per Year
+| total_per_year | year |
+| --- | --- |
+| 6367 | 2007 |
+| 6481 | 2008 |
+| 6312 | 2009 |
+| 6192 | 2010 |
+| 6216 | 2011 |
+| 6164 | 2012 |
+| 6158 | 2013 |
+| 8362 | 2014 |
+| 6098 | 2015 |
+| 6130 | 2016 |
+| 6019 | 2017 |
+| 5956 | 2018 |
+| 5883 | 2019 |
+| 5561 | 2020 |
+| 5665 | 2021 |
